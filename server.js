@@ -308,6 +308,9 @@ app.get("/health", (req, res) => {
   res.json({ status: "Server is running" });
 });
 
+app.get("/", (req,res) => {
+  res.json({message:"Welcome to Graycie Glasses Backend API"})
+});
 /* ============================================================
     404 HANDLER
 ============================================================ */
