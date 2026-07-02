@@ -19,10 +19,10 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
    DATABASE CONNECTION POOL
 ============================================================ */
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "graycie_app",
-  password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "graycie_glasses",
+  host: process.env.DB_HOST ,
+  user: process.env.DB_USER ,
+  password: process.env.DB_PASSWORD ,
+  database: process.env.DB_NAME ,
   port: Number(process.env.DB_PORT) || 3306,
   waitForConnections: true,
   connectionLimit: 10,
