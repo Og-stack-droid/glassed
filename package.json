@@ -1,0 +1,33 @@
+{
+  "name": "graycie-glasses-backend",
+  "version": "1.0.0",
+  "description": "Graycie Glasses Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:mysql": "powershell -ExecutionPolicy Bypass -File ./scripts/start-mysql.ps1",
+    "setup:admin": "powershell -ExecutionPolicy Bypass -File ./scripts/setup-admin.ps1",
+    "start:all": "powershell -ExecutionPolicy Bypass -File ./scripts/start-all.ps1"
+  },
+  "keywords": [
+    "ecommerce",
+    "api"
+  ],
+  "author": "Graycie Glasses",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.22.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "type": "commonjs"
+}
